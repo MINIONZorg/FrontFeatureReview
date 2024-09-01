@@ -59,15 +59,13 @@ h2 {
 .chat-container {
   display: flex;
   height: 100vh;
-  max-width: 900px;
-  margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .chat-list {
-  width: 30%;
+  width: 20%;
   background-color: #f0f0f0;
   padding: 1em;
   border-right: 1px solid #ccc;
@@ -93,7 +91,7 @@ h2 {
 }
 
 .chat-content {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
