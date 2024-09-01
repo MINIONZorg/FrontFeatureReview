@@ -10,6 +10,11 @@ const routes = [
         path: '/memo',
         name: 'Memo',
         component: () => import('@/pages/MemoPage.vue')
+    },
+    {
+        path: '/backlog',
+        name: 'Backlog',
+        component: () => import('@/pages/BacklogPage.vue')
     }
 ];
 

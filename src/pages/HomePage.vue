@@ -1,6 +1,6 @@
 <script setup>
 import { defineComponent } from 'vue';
-import AppCalendar from '@/components/AppCalendar.vue';
+import AppCalendar from '@/components/CalendarComp.vue';
 
 defineComponent({
   name: 'HomePage',
@@ -10,7 +10,6 @@ defineComponent({
 
 <template>
   <div>
-    <h1>Home</h1>
     <AppCalendar/>
   </div>
 </template>

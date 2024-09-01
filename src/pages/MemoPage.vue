@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import { QuillEditor } from 'vue3-quill';
+import { quillEditor } from 'vue3-quill';
 
 const content = ref('');
 </script>
@@ -8,7 +8,7 @@ const content = ref('');
 <template>
   <div>
     <h1>Memo Page</h1>
-    <QuillEditor v-model="content" />
+    <quillEditor v-model="content" />
   </div>
 </template>
 
