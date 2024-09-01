@@ -12,6 +12,7 @@ defineComponent({
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/memo">Memo</router-link></li>
       <li><router-link to="/backlog">Backlog</router-link></li>
+      <li><router-link to="/chat">Chat</router-link></li>
     </ul>
   </nav>
 </template>
@@ -25,6 +26,8 @@ nav {
 ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 li {

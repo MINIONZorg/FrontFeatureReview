@@ -1,16 +1,16 @@
 <script setup>
 import { defineComponent } from 'vue';
-import AppCalendar from '@/components/CalendarComp.vue';
+import CalendarComp from '@/components/CalendarComp.vue';
 
 defineComponent({
   name: 'HomePage',
-  components: { AppCalendar }
+  components: { CalendarComp }
 });
 </script>
 
 <template>
   <div>
-    <AppCalendar/>
+    <CalendarComp/>
   </div>
 </template>
 

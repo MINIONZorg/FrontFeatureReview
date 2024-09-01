@@ -11,7 +11,7 @@ defineComponent({
 <template>
   <div id="app">
     <NavBar />
-    <router-view />
+    <router-view id="contents-container"/>
   </div>
 </template>
 
@@ -26,5 +26,11 @@ body{
   text-align: center;
   color: #2c3e50;
   margin-top: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+#contents-container {
+  width: 100%;;
 }
 </style>
