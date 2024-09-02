@@ -7,6 +7,16 @@ const routes = [
         component: () => import('@/pages/HomePage.vue')
     },
     {
+        path: '/calendar',
+        name: 'Calendar',
+        component: () => import('@/pages/CalendarPage.vue')
+    },
+    {
+        path: '/signup',
+        name: 'Signup',
+        component: () => import('@/pages/SignupPage.vue')
+    },
+    {
         path: '/memo',
         name: 'Memo',
         component: () => import('@/pages/MemoPage.vue')

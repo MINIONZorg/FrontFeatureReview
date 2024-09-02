@@ -10,6 +10,7 @@ defineComponent({
   <nav>
     <ul>
       <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/calendar">Calendar</router-link></li>
       <li><router-link to="/memo">Memo</router-link></li>
       <li><router-link to="/backlog">Backlog</router-link></li>
       <li><router-link to="/chat">Chat</router-link></li>

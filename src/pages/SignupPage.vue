@@ -3,21 +3,18 @@
 </script>
 
 <template>
-  <div>
-    <h1>Home</h1>
-    <div class="login">
-      <input type="text" placeholder="Username" />
-      <input type="password" placeholder="Password" />
-      <button>Login</button>
-      <router-link to="signup">Signup</router-link>
-    </div>
+<div>
+  <h1>Signup</h1>
+  <div class="login">
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+    <input type="password" placeholder="Confirm Password" />
+    <button>Signup</button>
   </div>
+</div>
 </template>
 
 <style scoped>
-h1 {
-  color: #42b983;
-}
 .login {
   display: flex;
   flex-direction: column;
