@@ -1,36 +1,42 @@
 <script setup>
-import { defineComponent } from 'vue';
-import NavBar from '@/layout/NavBar.vue';
+import { useRoute } from 'vue-router';
+import BasicLayout from "@/layouts/BasicLayout.vue";
+import Thumbnail from "@/view/thumbnail/ThumbnailPage.vue";
+import { computed } from "vue";
 
-defineComponent({
-  name: 'App',
-  components: { NavBar }
+const route = useRoute();
+
+const showBasicLayout = computed(() => {
+  return !(route.path.startsWith('/user') || route.path === '/');
+});
+
+const showThumbnail = computed(() => {
+  return route.path === '/';
 });
 </script>
 
 <template>
-  <div id="app">
-    <NavBar />
-    <router-view id="contents-container"/>
+  <div id="AppVue">
+    <template v-if="showBasicLayout">
+      <BasicLayout>
+        <router-view />
+      </BasicLayout>
+    </template>
+    <template v-else-if="showThumbnail">
+      <Thumbnail />
+    </template>
+    <template v-else>
+      <router-view />
+    </template>
   </div>
 </template>
 
 <style>
-body{
-  margin: 0;
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 0;
+#AppVue {
   display: flex;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-}
-#contents-container {
-  width: 100%;;
+  background-color: #f0f0f0;
 }
 </style>
