@@ -1,5 +1,5 @@
 <script setup>
-import codeIcon from 'public/src/assets/icon/chatIcon/code.svg';
+import codeIcon from '@/assets/icon/chatIcon/code.svg';
 import docsIcon from '@/assets/icon/chatIcon/docs.svg';
 import imgIcon from '@/assets/icon/chatIcon/img.svg';
 import pdfIcon from '@/assets/icon/chatIcon/pdf.svg';
